@@ -16,4 +16,7 @@ Here are some ideas to get you started:
 -->
 
 
+
 ![Anna Vi11area1's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnnaVi11arrea1&theme=ambient_gradient)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AnnaVi11arrea1&layout=pie&theme=ambient_gradient)](https://github.com/AnnaVi11arrea1)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=AnnaVi11arrea1&repo=AnnaVi11arrea1&theme=ambient_gradient)](https://github.com/AnnaVi11arrea1)
