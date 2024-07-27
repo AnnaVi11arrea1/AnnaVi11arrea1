@@ -14,3 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+![Anna Vi11area1's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnnaVi11arrea1&theme=ambient_gradient)
