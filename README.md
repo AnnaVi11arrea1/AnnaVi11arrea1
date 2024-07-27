@@ -15,8 +15,17 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+<a href="https://github.com/AnnaVi11arrea1/github-readme-stats">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=AnnaVi11arrea1&bg_color=45,00ff3c,00ffff,9500ff,ff00f2&border_radius=50&border_color=00ff3c&title_color=000000" />
+</a>
+<a href="https://github.com/AnnaVi11arrea1/github-readme-stats">
+  <img height=500 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=AnnaVi11arrea1&layout=pie&langs_count=8&card_width=320&&bg_color=45,00ff3c,00ffff,9500ff,ff00f2&border_radius=50&border_color=00ff3c&title_color=000000" />
+</a>
+
+<a href="https://github.com/AnnaVi11arrea1/github-readme-stats">
+  <img height=500 align="center" src="https://github-readme-stats.vercel.app/api?username=AnnaVi11arrea1&commits
+    &&bg_color=45,00ff3c,00ffff,9500ff,ff00f2&border_radius=50&border_color=00ff3ctitle_color=000000" /></a>
+
+  
 
 
-![Anna Vi11area1's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnnaVi11arrea1&theme=ambient_gradient)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AnnaVi11arrea1&layout=pie&theme=ambient_gradient)](https://github.com/AnnaVi11arrea1)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=AnnaVi11arrea1&repo=AnnaVi11arrea1&theme=ambient_gradient)](https://github.com/AnnaVi11arrea1)
