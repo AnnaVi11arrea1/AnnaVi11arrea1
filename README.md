@@ -4,7 +4,9 @@
 
 ### :hammer_and_wrench: Languages and Tools :
 <div>
-  
+<table>
+  <tr>
+  <td>
   <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
@@ -18,8 +20,11 @@
    <img src="https://github.com/devicons/devicon/blob/master/icons/illustrator/illustrator-line.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
    <img src="https://github.com/devicons/devicon/blob/master/icons/photoshop/photoshop-original.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
    <img src="https://github.com/devicons/devicon/blob/master/icons/blender/blender-original-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-
+  </td>
+  </tr>
+</table>
 </div>
+<hr>
 
 
 <!--
@@ -48,6 +53,6 @@ Here are some ideas to get you started:
   <img height=350 align="center" src="https://github-readme-stats.vercel.app/api?username=AnnaVi11arrea1&commits
     &&bg_color=45,00ff3c,00ffff,9500ff,ff00f2&border_radius=50&border_color=00ff3ctitle_color=000000" /></a>
 
-
+<hr>
 
 
