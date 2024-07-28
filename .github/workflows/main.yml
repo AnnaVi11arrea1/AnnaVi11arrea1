@@ -12,8 +12,12 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+
+      - name: Create dist Directory
+        run: mkdir -p dist
       
       - name: Generate Snake Game
+        id: generate_snake
         uses: Platane/snk@master
         with:
           github_user_name: AnnaVi11arrea1
