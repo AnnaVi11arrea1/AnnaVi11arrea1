@@ -1,0 +1,31 @@
+name: Generate Snake Game from GitHub Contribution Grid
+
+on:
+  schedule:
+    - cron: "0 */12 * * *" # Run every 12 hours
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Generate Snake Game
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Generate Snake Game
+        uses: Platane/snk@master
+        with:
+          github_user_name: AnnaVi11arrea1
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+
+      - name: Commit and Push
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions
+          author_email: github-actions@github.com
+          message: "Update snake game"
+          add: "dist/github-contribution-grid-snake.svg"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
