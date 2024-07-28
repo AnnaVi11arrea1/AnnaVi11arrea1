@@ -1,7 +1,7 @@
 <p align="center" height=100>
 <h1>Hello Everyone & Welcome!</h1>
 </p>
-![GitHub Snake Game](dist/github-contribution-grid-snake.svg)
+
 
 
 ### :hammer_and_wrench: Languages and Tools :
@@ -57,5 +57,5 @@ Here are some ideas to get you started:
     &&bg_color=45,00ff3c,00ffff,9500ff,ff00f2&border_radius=50&border_color=00ff3ctitle_color=000000" /></a>
 
 <hr>
-
+![GitHub Snake Game](dist/github-contribution-grid-snake.svg)
 
