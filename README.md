@@ -1,6 +1,8 @@
 <p align="center" height=100>
 <h1>Hello Everyone & Welcome!</h1>
 </p>
+![GitHub Snake Game](dist/github-contribution-grid-snake.svg)
+
 
 ### :hammer_and_wrench: Languages and Tools :
 <div>
