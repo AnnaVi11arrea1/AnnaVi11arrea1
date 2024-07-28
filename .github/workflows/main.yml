@@ -31,4 +31,5 @@ jobs:
           message: "Update snake game"
           add: "dist/github-contribution-grid-snake.svg"
         env:
-          SNAKE_GAME: ${{ BEGIN_GAME }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
