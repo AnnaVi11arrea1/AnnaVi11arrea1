@@ -4,6 +4,10 @@
 
 
 
+
+
+
+
 ### :hammer_and_wrench: Languages and Tools :
 <div>
 <table>
@@ -28,6 +32,7 @@
 </div>
 <hr>
 
+https://github.com/user-attachments/assets/e9683436-43e4-4bf8-868b-f7fcd9daa732
 
 <!--
 **AnnaVi11arrea1/AnnaVi11arrea1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -57,5 +62,5 @@ Here are some ideas to get you started:
     &&bg_color=45,00ff3c,00ffff,9500ff,ff00f2&border_radius=50&border_color=00ff3ctitle_color=000000" /></a>
 
 <hr>
-![GitHub Snake Game](dist/github-contribution-grid-snake.svg)
+<!-- ![GitHub Snake Game](dist/github-contribution-grid-snake.svg)
 
