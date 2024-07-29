@@ -3,11 +3,6 @@
 </p>
 
 
-
-
-
-
-
 ### :hammer_and_wrench: Languages and Tools :
 <div>
 <table>
@@ -31,6 +26,8 @@
 </table>
 </div>
 <hr>
+
+<h2>A journey of a thousand miles begins with a single step</h2>
 
 https://github.com/user-attachments/assets/e9683436-43e4-4bf8-868b-f7fcd9daa732
 
