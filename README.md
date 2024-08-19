@@ -30,6 +30,13 @@
 <h2>A journey of a thousand miles begins with a single step</h2>
 
 https://github.com/user-attachments/assets/e9683436-43e4-4bf8-868b-f7fcd9daa732
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
+  <img alt="github-snake" src="github-snake.svg" />
+</picture>
+
+
 
 <!--
 **AnnaVi11arrea1/AnnaVi11arrea1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
