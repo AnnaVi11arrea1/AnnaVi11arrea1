@@ -2,6 +2,7 @@
 <h1>Hello Everyone & Welcome!</h1>
 </p>
 
+![snake animation](https://github.com/<seu AnnaVi11arrea1>/<seu AnnaVi11arrea1>/blob/output/github-contribution-grid-snake2.svg)
 
 ### :hammer_and_wrench: Languages and Tools :
 <div>
@@ -30,11 +31,7 @@
 <h2>A journey of a thousand miles begins with a single step</h2>
 
 https://github.com/user-attachments/assets/e9683436-43e4-4bf8-868b-f7fcd9daa732
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
-  <img alt="github-snake" src="github-snake.svg" />
-</picture>
+
 
 
 
