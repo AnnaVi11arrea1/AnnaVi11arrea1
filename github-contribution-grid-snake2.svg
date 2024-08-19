@@ -1,10 +1,10 @@
 <svg viewBox="-16 -32 880 192" width="880" height="192" xmlns="http://www.w3.org/2000/svg">
 
   <style>
-    :root{--cb:#1b1f230a;
-    --cs:white;
-    --ce:lime;
-    --c0:#161b22;
+    :root{--cb:#CE93D8;
+    --cs:lime;
+    --ce:#4A148C;
+    --c0:#4A148C;
     --c1:#01311f;
     --c2:#034525;
     --c3:#0f6d31;
