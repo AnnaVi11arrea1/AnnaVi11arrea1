@@ -2,7 +2,7 @@
 <h1>Hello Everyone & Welcome!</h1>
 </p>
 
-![snake animation](https://github.com/seu AnnaVi11arrea1/seu AnnaVi11arrea1/blob/output/github-contribution-grid-snake2.svg)
+![snake animation](https://github.com/seuAnnaVi11arrea1/seuAnnaVi11arrea1/blob/output/github-contribution-grid-snake2.svg)
 
 ### :hammer_and_wrench: Languages and Tools :
 <div>
