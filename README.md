@@ -32,7 +32,15 @@
 ![snake animation](https://github.com/AnnaVi11arrea1/AnnaVi11arrea1/blob/output/github-contribution-grid-snake2.svg)
 
 
-https://github.com/user-attachments/assets/e9683436-43e4-4bf8-868b-f7fcd9daa732
+
+  
+
+https://github.com/user-attachments/assets/53a33886-e4ee-45a7-ba38-210454a060c0
+
+
+
+
+
 
 <!--
 **AnnaVi11arrea1/AnnaVi11arrea1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.-->
