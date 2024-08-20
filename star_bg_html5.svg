@@ -1,4 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="187" height="62" viewBox="0 0 187 62"><rect width="100%" height="100%" fill="black" />
+<svg xmlns="http://www.w3.org/2000/svg" width="187" height="62" viewBox="0 0 187 62">
+   <defs>
+    <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="black" />
+      <stop offset="100%" stop-color="#91004b" />
+    </linearGradient>
+  </defs>
+ 
+ <rect width="100%" height="100%" fill="url(#grad1)" />
+
+
  <style>
      .spin {
       transform-origin: 50% 50%;
