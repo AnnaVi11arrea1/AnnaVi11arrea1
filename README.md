@@ -1,5 +1,7 @@
+  <h1>   :computer_mouse: 💻  Tech & Art :unicorn: :art:  </h1> 
+
 ![tech stach](title.svg)
-  <h1>   :computer_mouse: 💻   :unicorn: :art:  </h1> 
+
 <div>
 <table>
   <tr>
