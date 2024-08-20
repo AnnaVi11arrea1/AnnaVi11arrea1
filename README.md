@@ -29,8 +29,6 @@
 ![Firebase](star_bg_firebase.svg)
 ![Next JS](star_bg_next_js.svg)
 ![React](star_bg_react.svg)
-
-
 ![React Router](star_bg_react_router.svg)
 ![Adobe Photoshop](star_bg_adobe_photoshop.svg)
 ![Adobe Illustrator](star_bg_adobe_illustrator.svg)
@@ -38,11 +36,6 @@
 ![Canva](star_bg_canva.svg)
 ![Figma](star_bg_figma.svg)
 ![Docker](star_bg_docker.svg)
-
-
-
-
-
 
 
 <!-- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=black&color=ff00e6x) 
