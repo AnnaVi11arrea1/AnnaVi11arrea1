@@ -1,8 +1,8 @@
 
-<h1>Art and Computers!</h1>
+ ![CSS3](star_css3.svg) Art and Computers! ![CSS3](star_html5.svg)
 
 
-  # 💻Tech Stack
+  <h1> 💻Tech Stack </h1>  
 <div>
 <table>
   <tr>
