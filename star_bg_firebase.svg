@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="250" height="62" viewBox="0 0 250 62"><rect width="100%" height="100%" fill="black" /><polygon points="125.0,10.0 131.17174514907097,22.505321559063052 144.97218684219823,24.510643118126104 134.9860934210991,34.24467844093695 137.34349029814194,47.989356881873896 125.0,41.5 112.65650970185807,47.989356881873896 115.01390657890089,34.24467844093695 105.02781315780177,24.510643118126108 118.82825485092903,22.505321559063052" fill="#b6f507" /><text x="65%" y="60%" fill="white" font_size="12" font_family="Arial" text_anchor="middle" alignment_baseline="middle">Firebase</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="62" viewBox="0 0 250 62">
+  
+     <defs>
+    <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#b6f507" />
+      <stop offset="100%" stop-color="black" />
+    </linearGradient>
+  </defs>
+ 
+ <rect width="100%" height="100%" fill="url(#grad1)" stroke="#b6f507" stroke-width="10" stroke-opacity="0.8" />
+  
+<polygon points="125.0,10.0 131.17174514907097,22.505321559063052 144.97218684219823,24.510643118126104 134.9860934210991,34.24467844093695 137.34349029814194,47.989356881873896 125.0,41.5 112.65650970185807,47.989356881873896 115.01390657890089,34.24467844093695 105.02781315780177,24.510643118126108 118.82825485092903,22.505321559063052" fill="#b6f507" /><text x="65%" y="60%" fill="white" font_size="12" font_family="Arial" text_anchor="middle" alignment_baseline="middle">Firebase</text></svg>
