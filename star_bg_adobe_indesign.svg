@@ -1,24 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="62" viewBox="0 0 250 62"><rect width="100%" height="100%" fill="black" />
-    <style>
+ <style>
      .spin {
-      animation: loader 5s linear infinite;
+      transform-origin: 50% 50%;
+      animation: loader 8s linear infinite;
       
     }
 @keyframes loader {
   0% {
     rotate: 0deg;
   }
-  25% {
-    rotate: y 90deg;
-    scale: 0.5;
-  }
-  50% {
-    rotate: 180deg;
-  }
-  75% {
-    rotate: x 270deg;
-    border-radius: 50%;
-  }
+
   100% {
     rotate: 360deg;
   }
@@ -29,16 +20,7 @@
     0% {
       transform: rotate(0deg);
     }
-    25% {
-      transform: scale(0.5) rotateY(90deg);
-    }
-    50% {
-      transfrom: rotate(180deg);
-    }
-    75% {
-      transform: rotateX(270deg);
-      border-radius: 50%;
-    }
+
     100% {
       transform: rotate(360deg);
     }
