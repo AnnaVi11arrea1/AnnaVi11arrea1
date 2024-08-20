@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="187" height="62" viewBox="0 0 187 62"><rect width="100%" height="100%" fill="black" /><polygon points="93.5,10.0 99.67174514907097,22.505321559063052 113.47218684219823,24.510643118126104 103.48609342109911,34.24467844093695 105.84349029814193,47.989356881873896 93.5,41.5 81.15650970185807,47.989356881873896 83.51390657890089,34.24467844093695 73.52781315780177,24.510643118126108 87.32825485092903,22.505321559063052" fill="#ff0051" /><text x="65%" y="60%" fill="white" font_size="12" font_family="Arial" text_anchor="middle" alignment_baseline="middle">Docker</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="187" height="62" viewBox="0 0 187 62">
+<defs>
+    <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff0051" />
+      <stop offset="100%" stop-color="black" />
+    </linearGradient>
+  </defs>
+ 
+ <rect width="100%" height="100%" fill="url(#grad1)" stroke="#ff0051" stroke-width="10" stroke-opacity="0.8" />
+  
+  <polygon points="93.5,10.0 99.67174514907097,22.505321559063052 113.47218684219823,24.510643118126104 103.48609342109911,34.24467844093695 105.84349029814193,47.989356881873896 93.5,41.5 81.15650970185807,47.989356881873896 83.51390657890089,34.24467844093695 73.52781315780177,24.510643118126108 87.32825485092903,22.505321559063052" fill="#ff0051" /><text x="65%" y="60%" fill="white" font_size="12" font_family="Arial" text_anchor="middle" alignment_baseline="middle">Docker</text></svg>
