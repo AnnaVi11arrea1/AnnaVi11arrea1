@@ -2,7 +2,7 @@
  <style>
      .spin {
       transform-origin: 50% 50%;
-      animation: loader 1s linear infinite;
+      animation: loader 3s linear infinite;
       
     }
 @keyframes loader {
