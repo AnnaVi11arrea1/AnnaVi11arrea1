@@ -24,8 +24,31 @@
   </tr>
 </table>
 
+![CSS3](star_bg_css3.svg)
+![HTML5](star_bg_html5.svg)
+![JavaScript](star_bg_javascript.svg)
+![Python](star_bg_python.svg)
+![Ruby](star_bg_ruby.svg)
+![Firebase](star_bg_firebase.svg)
+![Next JS](star_bg_next_js.svg)
+![React](star_bg_react.svg)
+![Rails](star_bg_rails.svg)
+![Threejs](star_bg_threejs.svg)
+![React Router](star_bg_react_router.svg)
+![Adobe Photoshop](star_bg_adobe_photoshop.svg)
+![Adobe Illustrator](star_bg_adobe_illustrator.svg)
+![Adobe InDesign](star_bg_adobe_indesign.svg)
+![Canva](star_bg_canva.svg)
+![Figma](star_bg_figma.svg)
+![Docker](star_bg_docker.svg)
 
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=black&color=ff00e6) 
+
+
+
+
+
+
+<!-- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=black&color=ff00e6x) 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=black&color=f7076b) 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=black&color=f70707) 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=black&color=f76f07) 
@@ -42,6 +65,9 @@
 ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=black&color=f700ff) 	
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=black&color=ff00a2) 
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=black&color=ff0051)
+
+-->
+
 </div>
 <hr>
 
