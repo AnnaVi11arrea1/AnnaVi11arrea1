@@ -1,1 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="250" height="62" viewBox="0 0 250 62"><rect width="100%" height="100%" fill="black" /><polygon points="125.0,10.0 131.17174514907097,22.505321559063052 144.97218684219823,24.510643118126104 134.9860934210991,34.24467844093695 137.34349029814194,47.989356881873896 125.0,41.5 112.65650970185807,47.989356881873896 115.01390657890089,34.24467844093695 105.02781315780177,24.510643118126108 118.82825485092903,22.505321559063052" fill="#f70707" /><text x="65%" y="60%" fill="white" font_size="12" font_family="Arial" text_anchor="middle" alignment_baseline="middle">JavaScript</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="62" viewBox="0 0 250 62"><rect width="100%" height="100%" fill="black" />
+   <style>
+     .spin {
+      transform-origin: 50% 50%;
+      animation: loader 2s linear infinite;
+      
+    }
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@supports not (rotate: 0deg) {
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+  </style>
+  
+  
+  
+  <polygon class="spin" points="125.0,10.0 131.17174514907097,22.505321559063052 144.97218684219823,24.510643118126104 134.9860934210991,34.24467844093695 137.34349029814194,47.989356881873896 125.0,41.5 112.65650970185807,47.989356881873896 115.01390657890089,34.24467844093695 105.02781315780177,24.510643118126108 118.82825485092903,22.505321559063052" fill="#f70707" /><text x="65%" y="60%" fill="white" font_size="12" font_family="Arial" text_anchor="middle" alignment_baseline="middle">JavaScript</text></svg>
