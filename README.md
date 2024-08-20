@@ -1,15 +1,12 @@
 
- ![CSS3](star_css3.svg) Art and Computers! ![CSS3](star_html5.svg)
-
-
-  <h1> 💻Tech Stack </h1>  
+  <h1>   :computer_mouse: 💻 Tech Stack :unicorn: :art:  </h1> 
 <div>
 <table>
   <tr>
   <td>
   <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
+
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
@@ -24,7 +21,7 @@
   </tr>
 </table>
 
-![CSS3](star_bg_css3.svg)
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp; ![CSS3](star_bg_css3.svg)
 ![HTML5](star_bg_html5.svg)
 ![JavaScript](star_bg_javascript.svg)
 ![Python](star_bg_python.svg)
@@ -32,8 +29,8 @@
 ![Firebase](star_bg_firebase.svg)
 ![Next JS](star_bg_next_js.svg)
 ![React](star_bg_react.svg)
-![Rails](star_bg_rails.svg)
-![Threejs](star_bg_threejs.svg)
+
+
 ![React Router](star_bg_react_router.svg)
 ![Adobe Photoshop](star_bg_adobe_photoshop.svg)
 ![Adobe Illustrator](star_bg_adobe_illustrator.svg)
