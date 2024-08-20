@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="187" height="62" viewBox="0 0 187 62">
    <defs>
     <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
-      <stop offset="0%" stop-color="black" />
-      <stop offset="100%" stop-color="#8d0091" />
+      <stop offset="0%" stop-color="#8d0091" />
+      <stop offset="100%" stop-color="black" />
     </linearGradient>
   </defs>
  
- <rect width="100%" height="100%" fill="url(#grad1)" />
+ <rect width="100%" height="100%" fill="url(#grad1)" stroke="#8d0091" stroke-width="10" stroke-opacity="0.8" />
  <style>
      .spin {
       transform-origin: 50% 50%;
