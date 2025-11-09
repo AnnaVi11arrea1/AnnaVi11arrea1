@@ -34,7 +34,7 @@ jobs:
             const options = {
               hostname: "dev.to",
               port: 443,
-              path: "/api/followers/all",
+              path: "/dashboard/user_followers",
               method: "GET",
               headers: {
                 "api-key": API_KEY,
