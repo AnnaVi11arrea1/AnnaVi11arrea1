@@ -1,5 +1,5 @@
 const axios = require('axios');
-const API_TOKEN = 'YOUR_DEV_TO_API_KEY'; // Replace with your actual API key
+const API_TOKEN = 'PERSONAL_ACCESS_TOEKN'; // Replace with your actual API key
 
 async function getFollowersCount() {
   try {
