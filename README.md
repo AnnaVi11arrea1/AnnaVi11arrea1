@@ -1,7 +1,11 @@
   <h1>   :computer_mouse: 💻  Tech & Art :unicorn: :art:  </h1> 
 
 My DEV.to stats:
+
 <!-- DEVTO-FOLLOWERS-COUNT:START -->
+
+**[Your Count]** DEV.to followers
+
 <!-- DEVTO-FOLLOWERS-COUNT:END -->
 
 
