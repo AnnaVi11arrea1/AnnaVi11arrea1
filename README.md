@@ -3,9 +3,6 @@
 My DEV.to stats:
 
 <!-- DEVTO-FOLLOWERS-COUNT:START -->
-
-**[Your Count]** DEV.to followers
-
 <!-- DEVTO-FOLLOWERS-COUNT:END -->
 
 
