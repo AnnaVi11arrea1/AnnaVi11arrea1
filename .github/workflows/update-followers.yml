@@ -25,7 +25,7 @@ jobs:
           const fs = require("fs");
           const https = require("https");
 
-          const API_KEY = process.env.PERSONAL_ANNESS_TOKEN;
+          const API_KEY = process.env.PERSONAL_ACCESS_TOKEN;
           const README_FILE = "README.md";
           const START_MARKER = "<!-- DEVTO-FOLLOWERS-COUNT:START -->";
           const END_MARKER = "<!-- DEVTO-FOLLOWERS-COUNT:END -->";
@@ -78,7 +78,7 @@ jobs:
           # Execute the script
           node update_script.js
         env:
-          DEVTO_API_KEY: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          DEVTO_API_KEY: ${{ secrets.followers-dev }}
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
