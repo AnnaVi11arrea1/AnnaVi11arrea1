@@ -78,7 +78,7 @@ jobs:
           # Execute the script
           node update_script.js
         env:
-          DEVTO_API_KEY: ${{ secrets.followers-dev }}
+          DEVTO_API_KEY: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
