@@ -53,10 +53,9 @@ jobs:
                   }
                   try {
                     const followers = JSON.parse(data);
-                    // The API returns a list of followers, so we count the array length
                     resolve(followers.length); 
                   } catch (e) {
-                    reject(new Error("Failed to parse API response"));
+                    reject(new Error(`Failed to parse API response. Response data: ${data}`));
                   }
                 });
               });
@@ -66,30 +65,27 @@ jobs:
           };
 
           const updateReadme = async () => {
-            const count = await getFollowersCount();
-            let readmeContent = fs.readFileSync(README_FILE, "utf8");
-            const newContent = `${START_MARKER}**${count}** DEV.to followers${END_MARKER}`;
-            
-            const regex = new RegExp(`${START_MARKER}[\\s\\S]*?${END_MARKER}`, "g");
-            readmeContent = readmeContent.replace(regex, newContent);
+            try {
+              const count = await getFollowersCount();
+              let readmeContent = fs.readFileSync(README_FILE, "utf8");
+              const newContent = `${START_MARKER}**${count}** DEV.to followers${END_MARKER}`;
+              
+              const regex = new RegExp(`${START_MARKER}[\\s\\S]*?${END_MARKER}`, "g");
+              readmeContent = readmeContent.replace(regex, newContent);
 
-            fs.writeFileSync(README_FILE, readmeContent);
-            console.log("README updated with new follower count:", count);
-          } catch (error) {
+              fs.writeFileSync(README_FILE, readmeContent);
+              console.log("README updated with new follower count:", count);
+            } catch (error) {
               console.error(error.message);
+              // Exit the step with a failure status
               process.exit(1); 
-          }
+            }
           };
-          updateReadme().catch(console.error);
+
+          updateReadme();
           ' > update_script.js
 
           # Execute the script
           node update_script.js
         env:
           DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
-
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: "docs: Update DEV.to followers count"
-          # Optional: Customize the commit message
