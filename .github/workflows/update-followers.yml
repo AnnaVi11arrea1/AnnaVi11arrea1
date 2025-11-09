@@ -34,7 +34,7 @@ jobs:
             const options = {
               hostname: "dev.to",
               port: 443,
-              path: "/api/followers/all,
+              path: "/api/followers/users,
               method: "GET",
               headers: {
                 "api-key": API_KEY,
@@ -53,7 +53,7 @@ jobs:
                   }
                   try {
                     const followers = JSON.parse(data);
-                    resolve(followers.count); 
+                    resolve(users.length); 
                   } catch (e) {
                     reject(new Error(`Failed to parse API response. Response data: ${data}`));
                   }
