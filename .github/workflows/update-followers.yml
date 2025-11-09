@@ -81,7 +81,7 @@ jobs:
           DEVTO_API_KEY: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: AnnaVi11area1/git-auto-commit-action@v5
         with:
           commit_message: "docs: Update DEV.to followers count"
           # Optional: Customize the commit message
