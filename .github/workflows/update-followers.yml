@@ -47,6 +47,10 @@ jobs:
                 let data = "";
                 res.on("data", (chunk) => data += chunk);
                 res.on("end", () => {
+                  if (res.statusCode !== 200) {
+                    reject(new Error(`API Error: Status Code ${res.statusCode}. Response: ${data}`));
+                    return;
+                  }
                   try {
                     const followers = JSON.parse(data);
                     // The API returns a list of followers, so we count the array length
@@ -71,8 +75,11 @@ jobs:
 
             fs.writeFileSync(README_FILE, readmeContent);
             console.log("README updated with new follower count:", count);
+          } catch (error) {
+              console.error(error.message);
+              process.exit(1); 
+          }
           };
-
           updateReadme().catch(console.error);
           ' > update_script.js
 
