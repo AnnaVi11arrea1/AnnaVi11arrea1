@@ -2,7 +2,7 @@
 const fs = require("fs");
 const https = require("https");
 
-const API_KEY = process.env.PERSONAL_ACCESS_TOKEN;
+const API_KEY = process.env.DEVTO_API_KEY;
 const README_FILE = "README.md";
 const START_MARKER = "<!-- DEVTO-FOLLOWERS-COUNT:START -->";
 const END_MARKER = "<!-- DEVTO-FOLLOWERS-COUNT:END -->";
