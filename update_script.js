@@ -15,6 +15,7 @@ const getFollowersCount = () => {
     method: "GET",
     headers: {
       "api-key": API_KEY,
+      "Accept": "application/vnd.forem.api-v1+json"
     },
   };
 
