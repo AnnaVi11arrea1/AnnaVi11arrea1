@@ -1,0 +1,22 @@
+const axios = require('axios');
+const API_TOKEN = 'YOUR_DEV_TO_API_KEY'; // Replace with your actual API key
+
+async function getFollowersCount() {
+  try {
+    const response = await axios.get('https://dev.to/api/followers/users', {
+      headers: {
+        'api-key': API_TOKEN
+      }
+    });
+    return response.data.length; // The API returns an array of follower objects
+  } catch (error) {
+    console.error('Error fetching followers:', error);
+    return null;
+  }
+}
+
+getFollowersCount().then(count => {
+  if (count !== null) {
+    console.log(`You have ${count} followers on DEV.to`);
+  }
+});
