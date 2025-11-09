@@ -1,6 +1,8 @@
   <h1>   :computer_mouse: 💻  Tech & Art :unicorn: :art:  </h1> 
 
-  ![My Dev.to Followers Count](https://dev.to.com/api/followers)
+My DEV.to stats:
+<!-- DEVTO-FOLLOWERS-COUNT:START -->
+<!-- DEVTO-FOLLOWERS-COUNT:END -->
 
 
 ![tech stach](title.svg)
