@@ -1,5 +1,8 @@
   <h1>   :computer_mouse: 💻  Tech & Art :unicorn: :art:  </h1> 
 
+  ![My Dev.to Followers Count](https://dev.to.com/api/followers)
+
+
 ![tech stach](title.svg)
 
 <div>
