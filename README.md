@@ -61,7 +61,7 @@
 </div>
 <hr>
 
-![snake animation](https://github.com/AnnaVi11arrea1/AnnaVi11arrea1/blob/output/github-contribution-grid-snake2.svg)
+![snake animation](https://raw.githubusercontent.com/AnnaVi11arrea1/AnnaVi11arrea1/main/github-contribution-grid-snake2.svg)
 
 
 
