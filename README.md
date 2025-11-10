@@ -1,41 +1,31 @@
-  <h1>  💻  Tech & Art :unicorn:  </h1> 
+ 
 
 <div>
 <table>
   <tr>
   <td>
-    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
+    <div>  💻  Hello, I am a creative techie! :unicorn:  </div> 
+    <hr>
     <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/canva/canva-original.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/ruby/ruby-original.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/illustrator/illustrator-line.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/photoshop/photoshop-original.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/blender/blender-original-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
+    <ul>
+      <li>Fullstack experience with Ruby on Rails, check out my app govend at <a href="https://www.govend.ing/">govend.</a></li>
+      <li>Node.js</li>
+      <li>AWS</li>
+      <li>Google Maps</li>
+      <li>Render, Neon, Heroku</li>
+      <li>Postgres, MySql</li>
+      <li>Experience building virtual servers and bare metal.</li>
+      <li>Tech support and teaching experience.</li>
   </td>
   </tr>
 </table>
 
- ![CSS3](star_bg_css3.svg)
-![HTML5](star_bg_html5.svg)
-![JavaScript](star_bg_javascript.svg)
-![Python](star_bg_python.svg)
-![Ruby](star_bg_ruby.svg)
-![Firebase](star_bg_firebase.svg)
-![Next JS](star_bg_next_js.svg)
-![React](star_bg_react.svg)
-![React Router](star_bg_react_router.svg)
-![Adobe Photoshop](star_bg_adobe_photoshop.svg)
-![Adobe Illustrator](star_bg_adobe_illustrator.svg)
-![Adobe InDesign](star_bg_adobe_indesign.svg)
-![Canva](star_bg_canva.svg)
-![Figma](star_bg_figma.svg)
-![Docker](star_bg_docker.svg)
+
 
 
 <!-- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=black&color=ff00e6x) 
@@ -64,20 +54,16 @@
 ![snake animation](https://raw.githubusercontent.com/AnnaVi11arrea1/AnnaVi11arrea1/main/github-contribution-grid-snake2.svg)
 
 
-
-
-
 <!--
 **AnnaVi11arrea1/AnnaVi11arrea1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.-->
 
 
-
-# 📊GitHub Stats :
+### :alien: GitHub Stats :
 ![](https://github-readme-stats.vercel.app/api?username=AnnaVi11arrea1&theme=chartreuse-dark&hide_border=true&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=AnnaVi11arrea1&theme=chartreuse-dark&hide_border=true)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=AnnaVi11arrea1&theme=chartreuse-dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
 
-## 🏆GitHub Trophies
+
+### 🏆GitHub Trophies
 ![](https://github-trophies.vercel.app/?username=AnnaVi11arrea1&theme=matrix&no-frame=true&no-bg=false&margin-w=4)
 
 ---
