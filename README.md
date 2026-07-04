@@ -14,13 +14,13 @@
     <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
     <ul>
       <li>Fullstack experience with Ruby on Rails, check out my app govend at <a href="https://www.govend.ing/">govend</a>.</li>
+      <li>Self-hosting</li>
       <li>Node.js</li>
       <li>AWS Implementation</li>
-      <li>Google Maps and AI APIs experience.</li>
+      <li>Google Integrations</li>
       <li>Render, Neon, Heroku</li>
       <li>Postgres, MySql</li>
-      <li>Experience building virtual servers and bare metal.</li>
-      <li>Tech support and teaching experience.</li>
+      <li>Tech support and Documentaion.</li>
       <li>I share my experiences on <a href="https://dev.to/annavi11arrea1">DEV.to</a>.</li>
   </td>
   </tr>
