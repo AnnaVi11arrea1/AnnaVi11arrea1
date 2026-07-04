@@ -1,10 +1,8 @@
- 
-
 <div>
 <table>
   <tr>
   <td>
-    <div>  💻  Hello, I am a creative techie! :unicorn: Web Developer and IT Supoort  </div> 
+    <div>   :unicorn: Web Developer and IT Support 💻 </div> 
     <hr>
     <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
@@ -14,21 +12,22 @@
     <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/algolia/algolia-original.svg" title="Algolia" alt="Algolia" width="40" height="40"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/notion/notion-original.svg" title="Notion" alt="Notion" width="40" height="40"/>&nbsp;
-   
-   
-    <ul>
-      <li>Fullstack experience with Ruby on Rails, check out my app govend at <a href="https://www.govend.ing/">govend</a>.</li>
-      <li>Self-hosting <a href="https://www.annavillarreal.com/" tab="_blank">Visit Microsever</a></li>
-      <li>Node.js</li>
-      <li>AWS Integrations</li>
-      <li>Google Integrations</li>
-      <li>Render, Neon, Heroku</li>
-      <li>Postgres, MySql</li>
-      <li>Tech support and Documentaion.</li>
-      <li>I share my experiences on <a href="https://dev.to/annavi11arrea1">DEV.to</a>.</li>
   </td>
   </tr>
+
 </table>
+
+   <ul>
+       <li>Fullstack experience with Ruby on Rails, check out my app govend at <a href="https://www.govend.ing/">govend</a>.</li>
+       <li>Self-hosting <a href="https://www.annavillarreal.com/" tab="_blank">Visit Microsever</a></li>
+       <li>Node.js</li>
+       <li>AWS Integrations</li>
+       <li>Google Integrations</li>
+       <li>Render, Neon, Heroku</li>
+       <li>Postgres, MySql</li>
+       <li>Tech support and Documentaion.</li>
+       <li>I share my experiences on <a href="https://dev.to/annavi11arrea1">DEV.to</a>.</li>
+      </ul>
 
 
 
