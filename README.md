@@ -1,6 +1,9 @@
 <div>
 <table>
   <tr>
+    <td>
+      <img width="200" height="200" alt="smallpeeky" src="https://github.com/user-attachments/assets/8fa9e677-a7af-4dee-8778-0d4cf9feaf12" />
+    </td>
   <td>
     <div>   :unicorn: Web Developer and IT Support 💻 </div> 
     <hr>
