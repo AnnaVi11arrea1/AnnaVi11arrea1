@@ -65,40 +65,19 @@ const fetchJson = (path) => {
 };
 
 const getFollowersCount = async () => {
-  const candidatePaths = [
-    `/api/users/by_username?url=${encodeURIComponent(`https://dev.to/${DEVTO_USERNAME}`)}`,
-    `/api/users/by_username?url=${encodeURIComponent(DEVTO_USERNAME)}`,
-    `/api/users/${encodeURIComponent(DEVTO_USERNAME)}`,
-  ];
+  const profileUrl = `https://dev.to/${DEVTO_USERNAME}`;
+  const user = await fetchJson(
+    `/api/users/by_username?url=${encodeURIComponent(profileUrl)}`
+  );
+  const followersCount = Number(user?.followers_count ?? user?.followers ?? 0);
 
-  let lastError = null;
-
-  for (const path of candidatePaths) {
-    try {
-      const response = await fetchJson(path);
-      const payload = response && response.user ? response.user : response;
-
-      const rawFollowersCount =
-        payload?.followers_count ??
-        payload?.followersCount ??
-        payload?.user?.followers_count ??
-        payload?.user?.followersCount;
-
-      const followersCount = Number(rawFollowersCount);
-      if (Number.isFinite(followersCount)) {
-        return followersCount;
-      }
-
-      const availableKeys = payload ? Object.keys(payload).slice(0, 15).join(", ") : "<none>";
-      lastError = new Error(
-        `DEV.to profile response for ${DEVTO_USERNAME} did not include a valid followers_count. Available keys: ${availableKeys}. Raw payload: ${JSON.stringify(payload)}`
-      );
-    } catch (error) {
-      lastError = error;
-    }
+  if (!Number.isFinite(followersCount)) {
+    throw new Error(
+      `DEV.to profile did not include a valid follower count. Raw payload: ${JSON.stringify(user)}`
+    );
   }
 
-  throw lastError || new Error(`Unable to determine DEV.to follower count for ${DEVTO_USERNAME}.`);
+  return followersCount;
 };
 
 const updateReadme = async () => {
