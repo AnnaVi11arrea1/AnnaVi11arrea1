@@ -24,5 +24,18 @@ jobs:
       - name: Run the update script
         env:
           DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
-          DEVTO_USERNAME: ${{ vars.DEVTO_USERNAME }}
+          DEVTO_USERNAME: annavi11arrea1
         run: node update_script.js
+
+      - name: Commit updated README
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "Follower count has not changed."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update DEV.to follower count"
+          git push

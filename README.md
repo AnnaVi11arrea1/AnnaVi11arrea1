@@ -36,7 +36,7 @@
 
 
 <!-- DEVTO-FOLLOWERS-COUNT:START -->
-**0** DEV.to followers
+**34996** DEV.to followers
 <!-- DEVTO-FOLLOWERS-COUNT:END -->
 
 <!-- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=black&color=ff00e6x) 
@@ -82,5 +82,4 @@
 
 
 <hr>
-
 
