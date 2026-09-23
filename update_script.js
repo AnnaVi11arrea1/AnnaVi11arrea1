@@ -2,7 +2,7 @@
 const fs = require("fs");
 const https = require("https");
 
-const API_KEY = process.env.DEVTO_API_KEY;
+const DEVTO_USERNAME = process.env.DEVTO_USERNAME || "annavi11arrea1";
 const README_FILE = "README.md";
 const START_MARKER = "<!-- DEVTO-FOLLOWERS-COUNT:START -->";
 const END_MARKER = "<!-- DEVTO-FOLLOWERS-COUNT:END -->";
@@ -11,12 +11,11 @@ const getFollowersCount = () => {
   const options = {
     hostname: "dev.to",
     port: 443,
-    path: "/api/followers/all",
+    path: `/api/users/by_username?url=${encodeURIComponent(DEVTO_USERNAME)}`,
     method: "GET",
     headers: {
-      "api-key": API_KEY,
-      "Accept": "application/vnd.forem.api-v1+json"
-    },
+      "Accept": "application/json"
+    }
   };
 
   return new Promise((resolve, reject) => {
@@ -24,12 +23,20 @@ const getFollowersCount = () => {
       let data = "";
       res.on("data", (chunk) => data += chunk);
       res.on("end", () => {
+        if (res.statusCode !== 200) {
+          reject(new Error(`API Error: Status Code ${res.statusCode}. Response: ${data}`));
+          return;
+        }
         try {
-          const followers = JSON.parse(data);
-          // The API returns a list of followers, so we count the array length
-          resolve(followers.length); 
+          const user = JSON.parse(data);
+          const followersCount = Number(user.followers_count);
+          if (!Number.isFinite(followersCount)) {
+            reject(new Error(`Invalid followers_count in API response: ${data}`));
+            return;
+          }
+          resolve(followersCount);
         } catch (e) {
-          reject(new Error("Failed to parse API response"));
+          reject(new Error(`Failed to parse API response. Response data: ${data}`));
         }
       });
     });
@@ -51,4 +58,3 @@ const updateReadme = async () => {
 };
 
 updateReadme().catch(console.error);
-
