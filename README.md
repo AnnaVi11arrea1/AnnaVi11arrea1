@@ -32,8 +32,11 @@
        <li>I share my experiences on <a href="https://dev.to/annavi11arrea1">DEV.to</a>.</li>
       </ul>
 
-<!-- DEVTO-FOLLOWERS-COUNT:START -->**0** DEV.to followers<!-- DEVTO-FOLLOWERS-COUNT:END -->
 
+
+<!-- DEVTO-FOLLOWERS-COUNT:START -->
+**0** DEV.to followers
+<!-- DEVTO-FOLLOWERS-COUNT:END -->
 
 <!-- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=black&color=ff00e6x) 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=black&color=f7076b) 
