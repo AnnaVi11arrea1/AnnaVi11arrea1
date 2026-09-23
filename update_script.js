@@ -65,19 +65,27 @@ const fetchJson = (path) => {
 };
 
 const getFollowersCount = async () => {
-  const profileUrl = `https://dev.to/${DEVTO_USERNAME}`;
-  const user = await fetchJson(
-    `/api/users/by_username?url=${encodeURIComponent(profileUrl)}`
-  );
-  const followersCount = Number(user?.followers_count ?? user?.followers ?? 0);
+  const perPage = 1000;
+  let page = 1;
+  let totalCount = 0;
 
-  if (!Number.isFinite(followersCount)) {
-    throw new Error(
-      `DEV.to profile did not include a valid follower count. Raw payload: ${JSON.stringify(user)}`
+  while (true) {
+    const followers = await fetchJson(
+      `/api/followers/users?page=${page}&per_page=${perPage}`
     );
-  }
 
-  return followersCount;
+    if (!Array.isArray(followers)) {
+      throw new Error("DEV.to followers endpoint returned an invalid response.");
+    }
+
+    totalCount += followers.length;
+
+    if (followers.length < perPage) {
+      return totalCount;
+    }
+
+    page += 1;
+  }
 };
 
 const updateReadme = async () => {
