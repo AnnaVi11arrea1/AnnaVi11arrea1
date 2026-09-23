@@ -23,12 +23,13 @@
    <ul>
        <li>Fullstack experience with Ruby on Rails, check out my app govend at <a href="https://www.govend.ing/">govend</a>.</li>
        <li>Self-hosting <a href="https://www.annavillarreal.com/" tab="_blank">Visit Microsever</a></li>
-       <li>Node.js</li>
-       <li>AWS Integrations</li>
-       <li>Google Integrations</li>
-       <li>Render, Neon, Heroku</li>
-       <li>Postgres, MySql</li>
-       <li>Tech support and Documentaion.</li>
+       <li>Learning: Node, Python, Java</li>
+       <li>Interest in AI: Ollama, Claude, Copilot</li>
+       <li>Built a custom AI desktop pet named Catbot</li>
+       <li>Google Integrations like Google Maps and Gemini</li>
+       <li>Custom E-Commerce Site with Stripe Integration<a href="https://everfluorescent.com/" tab="_blank">Ever Fluorescent</a></li>
+       <li>Custom Weather App using NOAA free API</li>
+       <li>Tech support and documentation experience.</li>
        <li>I share my experiences on <a href="https://dev.to/annavi11arrea1">DEV.to</a>.</li>
       </ul>
 
