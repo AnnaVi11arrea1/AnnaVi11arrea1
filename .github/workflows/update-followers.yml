@@ -23,5 +23,6 @@ jobs:
 
       - name: Run the update script
         env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
           DEVTO_USERNAME: ${{ vars.DEVTO_USERNAME }}
         run: node update_script.js
