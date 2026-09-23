@@ -57,4 +57,7 @@ const updateReadme = async () => {
   console.log("README updated with new follower count:", count);
 };
 
-updateReadme().catch(console.error);
+updateReadme().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
