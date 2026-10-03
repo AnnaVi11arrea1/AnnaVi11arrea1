@@ -15,12 +15,10 @@
 
 ## 🦄 About me
 
-<table>
-  <tr>
-    <td width="200" valign="top">
-      <img width="200" height="200" alt="Peeky, my little pixel buddy" src="https://github.com/user-attachments/assets/8fa9e677-a7af-4dee-8778-0d4cf9feaf12" />
-    </td>
-    <td valign="top">
+<!-- Stacked rather than a two-column table so the list gets the full width on mobile. -->
+<p align="center">
+  <img width="180" height="180" alt="Peeky, my little pixel buddy" src="https://github.com/user-attachments/assets/8fa9e677-a7af-4dee-8778-0d4cf9feaf12" />
+</p>
 
 ✦ **Full-stack** with Ruby on Rails — check out my app [goVend](https://www.govend.ing/)<br />
 ✦ **Self-hosting** my own [microserver](https://www.annavillarreal.com/)<br />
@@ -31,10 +29,6 @@
 ✦ **Tech support & documentation** experience<br />
 ✦ **Learning** Node, Python & Java<br />
 ✦ I share my experiences on [DEV.to](https://dev.to/annavi11arrea1) ✍️
-
-  </td>
-  </tr>
-</table>
 
 <img src="assets/divider.svg" alt="" width="100%" />
 
