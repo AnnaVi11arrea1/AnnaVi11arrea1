@@ -2,6 +2,7 @@
 const fs = require("fs");
 const path = require("path");
 const { COLORS, FONT } = require("./theme");
+const { FAMILY, fetchFont, fontFace } = require("./fonts");
 
 const W = 900;
 const H = 280;
@@ -54,20 +55,20 @@ for (let x = -10; x < W; ) {
   x += w + 2;
 }
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Anna Villarreal — Infinite Curiosity">
+const renderHero = (fontCss) => `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Anna Villarreal — Infinite Curiosity">
   <title>Anna Villarreal — Infinite Curiosity</title>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="${COLORS.void}"/>
-      <stop offset="0.55" stop-color="${COLORS.night}"/>
-      <stop offset="1" stop-color="#3b1f8f"/>
+      <stop offset="0.55" stop-color="#0f0a2c"/>
+      <stop offset="1" stop-color="#22125a"/>
     </linearGradient>
     <radialGradient id="nebulaPink" cx="0.78" cy="0.3" r="0.45">
-      <stop offset="0" stop-color="${COLORS.magenta}" stop-opacity="0.45"/>
+      <stop offset="0" stop-color="${COLORS.magenta}" stop-opacity="0.3"/>
       <stop offset="1" stop-color="${COLORS.magenta}" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="nebulaCyan" cx="0.18" cy="0.45" r="0.45">
-      <stop offset="0" stop-color="${COLORS.cyan}" stop-opacity="0.32"/>
+      <stop offset="0" stop-color="${COLORS.cyan}" stop-opacity="0.2"/>
       <stop offset="1" stop-color="${COLORS.cyan}" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="name" x1="0" x2="1">
@@ -84,6 +85,10 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
       <stop offset="0" stop-color="#1c1450"/>
       <stop offset="1" stop-color="${COLORS.void}"/>
     </linearGradient>
+    <radialGradient id="scrim" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="${COLORS.void}" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="${COLORS.void}" stop-opacity="0"/>
+    </radialGradient>
     <filter id="glow" x="-10%" y="-40%" width="120%" height="180%">
       <feGaussianBlur stdDeviation="6" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -91,6 +96,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
     <clipPath id="card"><rect width="${W}" height="${H}" rx="22"/></clipPath>
   </defs>
   <style>
+    ${fontCss}
     .tw { animation: tw 3.5s ease-in-out infinite; }
     .sp { animation: sp 4s ease-in-out infinite; }
     .win { animation: win 6s steps(1) infinite; }
@@ -109,12 +115,13 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
     </g>
     ${dots}
     ${sparkles}
+    <ellipse cx="${W / 2}" cy="140" rx="380" ry="90" fill="url(#scrim)"/>
     <g fill="url(#city)">${buildings.join("")}</g>
     ${windows.join("")}
   </g>
-  <text x="${W / 2}" y="112" text-anchor="middle" font-family="${FONT}" font-size="52" font-weight="800" letter-spacing="1" fill="url(#name)" filter="url(#glow)">Anna Villarreal</text>
-  <text x="${W / 2}" y="150" text-anchor="middle" font-family="${FONT}" font-size="15" font-weight="600" letter-spacing="7" fill="${COLORS.star}">I N F I N I T E   ✦   C U R I O S I T Y</text>
-  <text x="${W / 2}" y="180" text-anchor="middle" font-family="${FONT}" font-size="14" font-weight="500" letter-spacing="1" fill="${COLORS.cyan}">Web Developer · IT Support · Artist · Chicagoland</text>
+  <text x="${W / 2}" y="112" text-anchor="middle" font-family="'${FAMILY}Name', ${FONT}" font-size="58" font-weight="700" letter-spacing="1" fill="url(#name)" filter="url(#glow)">Anna Villarreal</text>
+  <text x="${W / 2}" y="154" text-anchor="middle" font-family="'${FAMILY}Text', ${FONT}" font-size="17" font-weight="600" letter-spacing="6" fill="${COLORS.star}">I N F I N I T E   ✦   C U R I O S I T Y</text>
+  <text x="${W / 2}" y="188" text-anchor="middle" font-family="'${FAMILY}Text', ${FONT}" font-size="18" font-weight="600" letter-spacing="1" fill="${COLORS.cyan}">Web Developer · IT Support · Artist · Chicagoland</text>
   <rect x="1.5" y="1.5" width="${W - 3}" height="${H - 3}" rx="21" fill="none" stroke="url(#frame)" stroke-width="3"/>
 </svg>
 `;
@@ -138,7 +145,21 @@ const divider = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="24
 </svg>
 `;
 
-fs.mkdirSync(path.dirname(OUT), { recursive: true });
-fs.writeFileSync(OUT, svg);
-fs.writeFileSync(path.join(path.dirname(OUT), "divider.svg"), divider);
-console.log(`Wrote ${path.relative(process.cwd(), OUT)} and divider.svg`);
+const main = async () => {
+  const name = "Anna Villarreal";
+  const text = "INFINTECUROSYWeb Developer · IT Support · Artist · Chicagoland";
+  const fontCss = [
+    fontFace(await fetchFont(name, 700), `${FAMILY}Name`, 700),
+    fontFace(await fetchFont(text, 600), `${FAMILY}Text`, 600),
+  ].join(" ");
+
+  fs.mkdirSync(path.dirname(OUT), { recursive: true });
+  fs.writeFileSync(OUT, renderHero(fontCss));
+  fs.writeFileSync(path.join(path.dirname(OUT), "divider.svg"), divider);
+  console.log(`Wrote ${path.relative(process.cwd(), OUT)} and divider.svg`);
+};
+
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
