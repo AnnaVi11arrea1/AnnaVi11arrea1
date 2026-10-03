@@ -1,16 +1,16 @@
-name: Update DEV.to Followers Count
+name: Update DEV.to Badges
 
 on:
   schedule:
-    # Runs at midnight UTC daily
-    - cron: '0 0 * * *'
+    # Runs at 06:00 UTC on the 1st of every month
+    - cron: '0 6 1 * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-count:
+  update-badges:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -21,21 +21,21 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Run the update script
+      - name: Rebuild the badge card
         env:
-          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
           DEVTO_USERNAME: annavi11arrea1
-        run: node scripts/update-followers.js
+        run: node scripts/update-badges.js
 
-      - name: Commit updated badge
+      - name: Commit updated badge card
         run: |
-          if git diff --quiet -- assets/devto-followers.svg; then
-            echo "Follower count has not changed."
+          if git diff --quiet -- assets/devto-badges.svg; then
+            echo "Badges have not changed."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/devto-followers.svg
-          git commit -m "Update DEV.to follower count"
+          git add assets/devto-badges.svg
+          git commit -m "Update DEV.to badges"
+          git pull --rebase
           git push

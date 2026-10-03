@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="24" viewBox="0 0 900 24" role="presentation">
+  <defs>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#22e4ff" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#22e4ff"/>
+      <stop offset="0.5" stop-color="#7b4dff"/>
+      <stop offset="0.75" stop-color="#ff2bd6"/>
+      <stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <rect x="0" y="11" width="900" height="2" fill="url(#line)" filter="url(#g)"/>
+  <rect x="0" y="11.5" width="900" height="1" fill="url(#line)"/>
+  <path class="sp" style="animation-delay:0s;transform-origin:450px 12px" fill="#f4f1ff" d="M450 3 Q451.35 10.65 459 12 Q451.35 13.35 450 21 Q448.65 13.35 441 12 Q448.65 10.65 450 3Z"/>
+  <style>.sp { animation: sp 4s ease-in-out infinite; } @keyframes sp { 0%,100% { opacity: .5; transform: scale(.7) } 50% { opacity: 1; transform: scale(1.1) } } @media (prefers-reduced-motion: reduce) { .sp { animation: none; } }</style>
+</svg>
