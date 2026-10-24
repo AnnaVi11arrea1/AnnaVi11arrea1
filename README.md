@@ -6,7 +6,7 @@
 
 <a href="https://annavillarreal.com"><img src="https://img.shields.io/badge/annavillarreal.com-150f3a?style=for-the-badge&logo=googlechrome&logoColor=22e4ff" alt="Website" /></a>
 <a href="https://dev.to/annavi11arrea1"><img src="https://img.shields.io/badge/DEV.to-150f3a?style=for-the-badge&logo=devdotto&logoColor=ff2bd6" alt="DEV.to" /></a>
-<a href="https://everfluorescent.com"><img src="https://img.shields.io/badge/Ever_Fluorescent-150f3a?style=for-the-badge&logo=stripe&logoColor=7b4dff" alt="Ever Fluorescent" /></a>
+<a href="https://www.everfluorescent.com"><img src="https://img.shields.io/badge/Ever_Fluorescent-150f3a?style=for-the-badge&logo=stripe&logoColor=7b4dff" alt="Ever Fluorescent" /></a>
 <a href="https://www.govend.ing"><img src="https://img.shields.io/badge/goVend-150f3a?style=for-the-badge&logo=rubyonrails&logoColor=ff6ec7" alt="goVend" /></a>
 
 </div>
