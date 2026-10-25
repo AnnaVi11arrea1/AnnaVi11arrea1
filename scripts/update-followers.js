@@ -9,6 +9,9 @@ const DEVTO_USERNAME = process.env.DEVTO_USERNAME || "annavi11arrea1";
 const COUNT_OVERRIDE = process.env.FOLLOWERS_COUNT;
 const BADGE_FILE = path.join(__dirname, "..", "assets", "devto-followers.svg");
 const USER_AGENT = "AnnaVi11arrea1-GitHub-Actions";
+const MAX_RETRIES = 4;
+const BASE_RETRY_DELAY_MS = 5000;
+const MAX_RETRY_DELAY_MS = 300000;
 
 if (!DEVTO_API_KEY && !COUNT_OVERRIDE) {
   throw new Error("Missing required DEVTO_API_KEY environment variable.");
@@ -19,7 +22,19 @@ const parseResponsePreview = (data) => {
   return trimmed ? trimmed.slice(0, 500) : "<empty>";
 };
 
-const fetchJson = (path) => {
+const getRetryDelay = (retryAfter, retryCount) => {
+  const seconds = Number(retryAfter);
+  const retryAt = Number.isFinite(seconds)
+    ? Date.now() + seconds * 1000
+    : Date.parse(retryAfter);
+  const delay = Number.isFinite(retryAt)
+    ? Math.max(0, retryAt - Date.now())
+    : BASE_RETRY_DELAY_MS * 2 ** retryCount;
+
+  return Math.min(delay, MAX_RETRY_DELAY_MS);
+};
+
+const fetchJson = (path, retryCount = 0) => {
   const options = {
     hostname: "dev.to",
     port: 443,
@@ -42,6 +57,17 @@ const fetchJson = (path) => {
       });
 
       res.on("end", () => {
+        if (res.statusCode === 429 && retryCount < MAX_RETRIES) {
+          const delay = getRetryDelay(res.headers["retry-after"], retryCount);
+          console.warn(
+            `DEV.to API rate limited the request. Retrying in ${Math.ceil(delay / 1000)}s (${retryCount + 1}/${MAX_RETRIES}).`
+          );
+          setTimeout(() => {
+            fetchJson(path, retryCount + 1).then(resolve, reject);
+          }, delay);
+          return;
+        }
+
         if (res.statusCode !== 200) {
           const preview = parseResponsePreview(data);
           reject(

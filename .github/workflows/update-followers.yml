@@ -2,8 +2,8 @@ name: Update DEV.to Followers Count
 
 on:
   schedule:
-    # Runs at midnight UTC daily
-    - cron: '0 0 * * *'
+    # Runs at midnight UTC every Sunday
+    - cron: '0 0 * * 0'
   workflow_dispatch:
 
 permissions:
